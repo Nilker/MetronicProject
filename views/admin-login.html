@@ -52,7 +52,7 @@
 <!-- BEGIN LOGIN -->
 <div class="content">
   <!-- BEGIN LOGIN FORM -->
-  <form class="login-form" action="/admin/" method="get">
+  <form class="login-form" action="/admin/login" method="post">
     <h3 class="form-title">后台管理系统</h3>
     <div class="alert alert-danger display-hide">
       <button class="close" data-close="alert"></button>
@@ -80,6 +80,7 @@
       <button type="submit" class="btn btn-block blue pull-right">
         登录 <i class="m-icon-swapright m-icon-white"></i>
       </button>
+      {{error}}
     </div>
   </form>
   <!-- END LOGIN FORM -->
